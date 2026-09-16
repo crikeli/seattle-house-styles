@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# King County Assessor photos, and the local prototype that embeds them as
+# base64. King County's site terms require written permission before this
+# content can be published/redistributed - a request is pending (see
+# kc_permission_request_email.md). Do not remove these lines until that's
+# resolved. Regenerate locally via data/fetch_kc_photos.py and
+# data/build_prototype_map.py.
+data/kc_photos/
+kc_prototype_map.html
+
+# Superseded Phase 0 (Mapillary) artifacts - images are CC-BY-SA (fine to
+# redistribute with attribution) but this approach was abandoned in favor
+# of King County Assessor photos, and no per-image attribution was
+# recorded, so these stay out of the repo rather than publish without it.
+data/pilot_images/
+data/phase0_classification_review.pdf
+
+# Large data files, regeneratable via the fetch scripts
+data/parcels_master.parquet
